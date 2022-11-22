@@ -1,8 +1,10 @@
 import config from 'config';
 import express from 'express';
 import baseRouter from '@src/routes/index';
+import connectDb from '@src/utils/connect';
 
 const app = express();
+connectDb();
 
 app.use(express.urlencoded({ extended: false }));
 app.set('view engine', 'pug');
