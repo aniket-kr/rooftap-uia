@@ -5,7 +5,7 @@ export interface IGeoPoint {
   coordinates: number[];
 }
 
-const pointSchema = new Schema({
+const pointSchema = new Schema<IGeoPoint>({
   type: {
     type: String,
     enum: ['Point'],

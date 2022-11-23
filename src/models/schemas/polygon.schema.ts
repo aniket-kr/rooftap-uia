@@ -5,7 +5,7 @@ export interface IGeoPolygon {
   coordinates: number[][][];
 }
 
-const polygonSchema = new Schema({
+const polygonSchema = new Schema<IGeoPolygon>({
   type: {
     type: String,
     enum: ['Polygon'],

@@ -19,5 +19,7 @@ const buildingSchema = new Schema<IBuilding>({
   plusCode: String,
 });
 
+buildingSchema.index({ position: '2dsphere' });
+
 const Building = model<IBuilding>('Building', buildingSchema);
 export default Building;
