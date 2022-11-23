@@ -2,11 +2,13 @@ import config from 'config';
 import express from 'express';
 import baseRouter from '@src/routes/index';
 import connectDb from '@src/utils/connect';
+import path from 'path';
 
 const app = express();
 connectDb();
 
 app.use(express.urlencoded({ extended: false }));
+app.use('/static', express.static(path.join(__dirname, 'static')));
 app.set('view engine', 'pug');
 
 // register all routes
