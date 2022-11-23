@@ -1,0 +1,130 @@
+@font-face {
+	font-family: "Poppins Light";
+	src: url('/static/font/Poppins\ Light\ 300.ttf');
+	}
+	@font-face {
+		font-family: "Poppins Bold";
+		src: url('/static/font/Poppins\ Medium\ 500.ttf');
+		}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:Poppins Bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 16px;
+}
+body{
+	color: #707070;
+}
+
+ul , li {
+	list-style-type: none;
+        }
+
+
+header{
+      padding: 15px;
+      margin-left: 250px;
+      box-shadow: 0 0 8px rgb(230, 230, 230);
+      min-height: 70px;
+}
+header .hesd_inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+header .hesd_inner .right_part form{
+	width: 500px;
+	height: 45px;
+	position: relative;
+}
+header .hesd_inner .right_part form input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	box-shadow: 0 0 8px rgb(223, 223, 223);
+	padding: 5px 10px;
+} 
+header .hesd_inner .right_part form input:focus{
+	box-shadow: 0 0 8px #ccc;
+}
+
+header .hesd_inner .right_part form button{
+	position:absolute;
+	top: 0;
+	right: 0;
+	width: 15%;
+	height: 100%;
+	padding-top: px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	outline: none;
+	background-color: #2f8fe9;
+	border: solid 1px #2f8fe9;
+	cursor: pointer;
+
+}
+header .hesd_inner .left_part ul{
+	display: flex;
+	align-items: center;
+}
+
+header .hesd_inner .left_part ul li{
+	margin-left: 30px;
+}
+header .hesd_inner .left_part ul li .profile{
+	display: flex;
+	align-items: center;
+}
+header .hesd_inner .left_part ul li .profile .avtar-img{
+	margin-right: 15px;
+
+}
+header .hesd_inner .left_part ul li span i{
+	font-size: 22px;
+}
+header .hesd_inner .left_part ul li span:hover{
+	color: #2f8fe9;
+}
+header .hesd_inner .left_part ul li.have_dots span{
+	position: relative;
+
+}
+header .hesd_inner .left_part ul li.have_dots span::before {
+	content: "";
+	position: absolute;
+	top:-5px;
+
+}
+
+
+
+
+.map{
+	margin-left: 250px;
+	width: ;
+	height: 89vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.map-but{
+	position: absolute ;
+	 bottom: 15px;
+	 right: 10px;
+}
+.button-map button{
+	background: #fff;
+	border: none;
+	outline: none;
+	color: #2f8fe9;
+	padding: 5px;
+	
+}
+.marge-but{
+	margin: 10px 0px;
+}

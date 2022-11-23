@@ -1,0 +1,98 @@
+@font-face {
+	font-family: "Poppins Light";
+	src: url('/static/font/Poppins\ Light\ 300.ttf');
+	}
+	@font-face {
+		font-family: "Poppins Bold";
+		src: url('/static/font/Poppins\ Medium\ 500.ttf');
+		}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:Poppins Bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 16px;
+}
+body{
+	color: #707070;
+}
+
+ul , li {
+	list-style-type: none;
+        }
+/*---------------slide-bar-css---------------------------*/
+
+.slide-bar{
+	 width: 250px;
+	 height: 100vh;
+	 background: #fff;
+	 box-shadow: 0 0 8px rgb(230, 230, 230);
+	 overflow: hidden;
+	 overflow-x: auto;
+	 position: fixed;
+	 padding: 15px;
+}
+.slide-bar .logo{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.slide-bar .logo  a h1 {
+	font-size: 30px;
+	color: #2f8fe9;
+}
+
+.slide-bar .logo  a:last-child{
+	display: non;
+
+}
+.se{
+               width: 100%;
+               background-color: #fff;
+}
+.se2{
+               width: 100%;
+               padding: 10px 20px;
+               background-color: #fff;
+               border: none;        
+}
+.se select {
+         width: 100%;
+         padding: 10px 20px;
+         background-color: #fff;
+         border: none;
+         outline: none;
+}
+.slide-bar .avatar{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.slide-bar .avatar .avatar-img{
+	margin-right: 10px;
+}
+.slide-bar .avatar .name-pos h5{
+	color: #ccc;
+	font-size: 12px;
+}
+.slide-bar .slide-bar-nav ul li a{
+	display: flex;
+	align-items: center;
+	padding: 12px 10px;
+	margin: 10px 0 0px;
+	width: 100%;
+	color: #707070;
+	transition: .45s;
+
+}
+.slide-bar .slide-bar-nav ul li a:hover{
+	
+
+}
+
+.slide-bar .slide-bar-nav ul li a .nav-link{
+	margin-left: 15px;
+}

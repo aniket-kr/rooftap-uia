@@ -1,0 +1,6 @@
+.container {
+    position: relative;
+    left: 250px;
+    height: calc(100vh - 75px);
+    width: calc(100vw - 250px);
+}
