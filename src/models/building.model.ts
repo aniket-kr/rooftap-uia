@@ -1,5 +1,4 @@
 import { model, Schema } from 'mongoose';
-import 'mongoose-geojson-schema';
 import pointSchema, { IGeoPoint } from './schemas/point.schema';
 import polygonSchema, { IGeoPolygon } from './schemas/polygon.schema';
 

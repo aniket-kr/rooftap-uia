@@ -2,7 +2,7 @@ import { Schema } from 'mongoose';
 
 export interface IGeoPolygon {
   type: 'Polygon';
-  coordinates: number[][][];
+  coordinates: number[][];
 }
 
 const polygonSchema = new Schema<IGeoPolygon>({
@@ -12,7 +12,7 @@ const polygonSchema = new Schema<IGeoPolygon>({
     required: true,
   },
   coordinates: {
-    type: [[[Number]]],
+    type: [[Number]],
     required: true,
   },
 });
