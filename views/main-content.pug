@@ -1,9 +1,0 @@
-block prepend styles
-    link(rel="stylesheet", href="/static/css/map-styles.css")
-
-block prepend scripts
-    script(src=`https://maps.googleapis.com/maps/api/js?key=${mapsApiKey}&callback=initMap&v=weekly`, defer) 
-    script(src="/static/js/map-script.js")
-
-.container
-    

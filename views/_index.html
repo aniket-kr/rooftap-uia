@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<link rel="stylesheet" type="text/css" href="/static/css/SLIDE_BAR.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/select_box.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/TOP_BAR.css">
+	<link rel="stylesheet" href="/static/css/fontawesome.css">
+	<link rel="stylesheet" href="/static/css/all.min.css">
+	<title>ROOFTAP</title>
+
+	<script src="/static/js/map-script.js" defer></script>
+	<script src="/static/js/sidebar.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC_18RkTBBrSiUY6c9OxxmokMwOBo6gDg&callback=initMap&v=weekly&v=3.exp&libraries=places" defer></script>
+</head>
+
+<body>
+	<div class="slide-bar">
+		<div class="logo">
+			<a href="#">
+				<h1>Rooftap</h1>
+			</a>
+			<a href="#"><img src="/static/images/R.png" width="70px"></a>
+		</div>
+		<div class="slide-bar-nav2">
+			<ul>
+				<li>
+
+					<a href="#">
+						<span><img src="/static/images/area-png-4.png" width="30px"></span>&nbsp;
+						<span>Area</span>
+					</a>
+
+					<div class="se">
+						<p class="bx_c rf_cr"><span id="area">[N/A]</span> sq m</p>
+
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<span><img src="/static/images/OIP (2).jfif" width="30px"></span>&nbsp;
+						<span class="nav-link">Rootop color</span><br>
+					</a>
+
+					<div class="se">
+						<p class="rf_cr bx_c" style="border-right: 15px ;">White</p>
+
+					</div>
+
+				</li>
+				<li>
+					<a href="#">
+						<span><img src="/static/images/R (1).png" width="30px"></span>
+						<span class="nav-link">Paint</span>
+					</a>
+					<div class="se">
+
+						<form id="app-cover">
+							<div id="select-box">
+								<input type="checkbox" id="options-view-button">
+								<div id="select-button" class="brd">
+									<div id="selected-value">
+										<span>Select a paint</span>
+									</div>
+									<div id="chevrons">
+										<i class="fa fa-chevron-up"></i>
+										<i class="fa fa-chevron-down"></i>
+									</div>
+								</div>
+								<div id="options">
+									<div class="option">
+										<input class="s-c top" type="radio" name="color" value="Black">
+										<input class="s-c bottom" type="radio" name="color" value="Black">
+										<i class="fab fa-codepen"></i>
+										<span class="label">Black</span>
+										<span class="opt-val">Black</span>
+									</div>
+									<div class="option">
+										<input class="s-c top" type="radio" name="color" value="White">
+										<input class="s-c bottom" type="radio" name="color" value="White">
+										<i class="fab fa-codepen"></i>
+										<span class="label">White</span>
+										<span class="opt-val">White</span>
+									</div>
+									<div id="option-bg"></div>
+								</div>
+							</div>
+						</form>
+					</div> </select>
+
+
+
+				</li>
+				<li>
+					<a href="#">
+						<span><img src="/static/images/date-png-96-images-in-collection-page-1-date-png-512_512.webp"
+								width="25px"></span>&nbsp;
+						<span class="nav-link">Date</span>
+					</a>
+					<div class="se">
+						<input type="date" placeholder="Choose date" name="">
+
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<span><img src="/static/images/R (2).png" width="30px"></span>&nbsp;
+						<span class="nav-link">Electrical saving</span>
+					</a>
+
+					<div class="se">
+						<form id="app-cover">
+							<div id="select-box">
+								<input type="checkbox" id="options-view-button">
+								<div id="select-button" class="brd">
+									<div id="selected-value">
+										<span>Saving Plan</span>
+									</div>
+									<div id="chevrons">
+										<i class="fas fa-chevron-up"></i>
+										<i class="fas fa-chevron-down"></i>
+									</div>
+								</div>
+								<div id="options">
+									<div class="option">
+										<input class="s-c top" type="radio" name="platform" value="codepen">
+										<input class="s-c bottom" type="radio" name="platform" value="codepen">
+										<i class="fab fa-codepen"></i>
+										<span class="label">Day</span>
+										<span class="opt-val"><span id="savings-daily">1400</span>W/Day</span>
+									</div>
+									<div class="option">
+										<input class="s-c top" type="radio" name="platform" value="codepen">
+										<input class="s-c bottom" type="radio" name="platform" value="codepen">
+										<i class="fab fa-codepen"></i>
+										<span class="label">Month</span>
+										<span class="opt-val"><span id="savings-monthly">1400</span>W/Month</span>
+									</div>
+									<div class="option">
+										<input class="s-c top" type="radio" name="platform" value="codepen">
+										<input class="s-c bottom" type="radio" name="platform" value="codepen">
+										<i class="fab fa-codepen"></i>
+										<span class="label">Year</span>
+										<span class="opt-val"><span id="savings-yearly">1400</span>/Year</span>
+									</div>
+									<div id="option-bg"></div>
+								</div>
+							</div>
+						</form>
+
+
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<span><img src="/static/images/graph-clipart-yellow-4.png" width="30px"></span>
+						<span class="nav-link">&nbsp; Graph</span>
+					</a>
+
+					<div class="se" id="start">
+
+						<label onclick="graphf()" class="bx_c rf_cr button_c"><span
+								style="text-align:center ;">Start</span></label>
+
+
+					</div>
+					<div onclick="graphf_cse()" class="se" id="cse" style="display:none;">
+						<label class="bx_c rf_cr button_c"><span style="text-align:center ;">Close</span></label>
+
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<span><img src="/static/images/co2.png" width="30px"></span>
+						<span class="nav-link">&nbsp; CO<sub>2</sub> emission</span>
+					</a>
+
+					<div class="se">
+						<p class="bx_c rf_cr">140 L</p>
+
+					</div>
+				</li>
+				<li class="dispay_side">
+					<center><span href="#"><img src="/static/images/R.png"
+								width="40px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i
+								class="fa fa-envelope fa-2x"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i
+								class="fa fa-phone fa-2x"></i></span></center>
+				</li>
+
+				<li style="height:80px ;">
+
+				</li>
+
+
+
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="hesd_inner">
+			<div class="left_part">
+				<ul>
+					<li id="bars " class="abst_bars">
+						<span onclick="navtouc()" class="bar"><i class="fa fa-bars"></i></span>
+					</li>
+
+				</ul>
+
+			</div>
+			<div class="right_part">
+				<form>
+					<div class="recherche_bx">
+						<input id="searchbox" type="search" name="search" placeholder="Search..." required>
+						<button id="searchButton"><i class="fa fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+			<div class="left_part">
+				<ul>
+					<li class="display_n">
+						<a href="#"><img src="/static/images/R.png" width="40px"></a>
+					</li>
+					<li class="have_dots display_n">
+						<span><i class="fa fa-envelope"></i></span>
+					</li>
+					<li class="display_n">
+						<span class="bar"><i class="fa fa-phone"></i></span>
+					</li>
+					<li style="display:none ;" id="times">
+						<span onclick="navtouc_cse()" class="bar"><i class="fa fa-times"
+								style="font-size:27px ;"></i></span>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</header>
+	<section class="map" id="map">
+
+	</section>
+	<section class="graph_c">
+		<center class="buttn_graph"><button onclick="graphf_cse()"><i class="fa fa-arrow-down"></i></button></center>
+
+	</section>
+
+	<script>
+		let menu = document.querySelector('.slide-bar');
+		var times = document.getElementById('times');
+		var bars = document.getElementById('bars');
+		let graph = document.querySelector('.graph_c');
+		var start = document.getElementById('start');
+		var cse = document.getElementById('cse');
+		function navtouc() {
+			menu.classList.add('active');
+			times.style.display = "block";
+			bars.style.display = "none";
+			graph.classList.remove('active_graph');
+		}
+		function navtouc_cse() {
+			menu.classList.remove('active');
+			times.style.display = "none";
+			bars.style.display = "block";
+		}
+		function graphf() {
+			graph.classList.add('active_graph');
+			menu.classList.remove('active');
+			cse.style.display = "block";
+			start.style.display = "none";
+			times.style.display = "none";
+		}
+		function graphf_cse() {
+			graph.classList.remove('active_graph');
+			cse.style.display = "none";
+			start.style.display = "block";
+
+		}
+	</script>
+</body>
+
+</html>

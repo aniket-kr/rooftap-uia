@@ -9,7 +9,6 @@ connectDb();
 
 app.use(express.urlencoded({ extended: false }));
 app.use('/static', express.static(path.join(__dirname, 'static')));
-app.set('view engine', 'pug');
 
 // register all routes
 app.use('/', baseRouter);

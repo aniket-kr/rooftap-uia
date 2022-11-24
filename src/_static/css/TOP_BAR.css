@@ -1,0 +1,254 @@
+@font-face {
+	font-family: "Poppins Light";
+	src: url('./font/Poppins\ Light\ 300.ttf');
+	}
+	@font-face {
+		font-family: "Poppins Bold";
+		src: url('../font/Poppins\ Medium\ 500.ttf');
+		}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:Poppins Bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 14px;
+}
+body{
+	color: #707070;
+}
+
+ul , li {
+	list-style-type: none;
+        }
+
+
+header{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+      padding: 15px;
+      padding-left: 250px;
+      box-shadow: 0 0 8px rgb(230, 230, 230);
+      background: rgb(222, 247, 248);
+      min-height: 70px;
+}
+
+header .hesd_inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+header .hesd_inner .right_part form .recherche_bx{
+	width: 500px;
+	height: 40px;
+	padding:0px;
+	box-shadow: 0px 0px 5px rgb(173, 173, 173);
+	background-color: #fff;
+	border-radius: 15px;
+}
+header .hesd_inner .right_part form input{
+	width: 450px;
+	height: 38px;
+	border: none;
+	outline: none;
+	padding:0px;
+	margin-left: 10px;
+  transform: translateY(-2px);
+} 
+header .hesd_inner .right_part form input:focus{
+}
+
+header .hesd_inner .right_part form button{
+	height: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: #707070;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+}
+header .hesd_inner .left_part ul{
+	display: flex;
+	align-items: center;
+}
+
+header .hesd_inner .left_part ul li{
+	margin-left: 30px;
+}
+header .hesd_inner .left_part ul li .profile{
+	display: flex;
+	align-items: center;
+}
+header .hesd_inner .left_part ul li .profile .avtar-img{
+	margin-right: 15px;
+
+}
+header .hesd_inner .left_part ul li span i{
+	font-size: 22px;
+}
+header .hesd_inner .left_part ul li span:hover{
+	color: #2f8fe9;
+}
+header .hesd_inner .left_part ul li.have_dots span{
+	position: relative;
+
+}
+header .hesd_inner .left_part ul li.have_dots span::before {
+	content: "";
+	position: absolute;
+	top:-5px;
+
+}
+
+
+.abst_bars{
+	position: absolute;
+	left: 3px;
+         
+}
+.map{
+	/* background: url(../images/navigation-ville-noir-blanc-carte_23-2148309836.png); */
+	width:100% ;
+	margin-top: 70px;
+	height:90vh;
+}
+.map-but{
+	position: absolute ;
+	 bottom: 15px;
+	 right: 10px;
+}
+.button-map button{
+	background: #fff;
+	border: none;
+	outline: none;
+	color: #2f8fe9;
+	padding: 5px;
+	
+}
+.marge-but{
+	margin: 10px 0px;
+}
+.buttn_graph button{
+	background:transparent;
+	color: #2f8fe9;
+	border: none;
+	outline: none;
+	font-size: 27px;
+}
+.buttn_graph button i{
+	font-size: 23px;
+}
+.dispay_side{
+	display: none;
+}
+
+@media(max-width:986px){
+	header{
+		padding: 10px;
+		padding-left: 250px;
+		min-height: 60px;
+	              }
+	              header .hesd_inner .right_part form input{
+		width: 300px;
+		height: 28px;
+	} 
+	header .hesd_inner .right_part form .recherche_bx{
+		width: 350px;
+		height: 30px;
+		
+	}
+	.map{
+		width:100% ;
+		margin-top: 60px;
+		height:90vh;
+	}
+	
+}
+@media(max-width:852px){
+	header{
+		padding: 10px;
+		padding-left: 10px;
+		min-height: 60px;
+	              }
+	              header .hesd_inner .right_part form input{
+		width: 250px;
+		height: 28px;
+	} 
+	header .hesd_inner .right_part form .recherche_bx{
+		width: 300px;
+		height: 30px;
+		
+	}
+	*{
+		font-size: 12px;
+	}
+	
+}
+
+@media(max-width:566px){
+	header{
+		padding: 10px;
+		padding-left: 10px;
+		min-height: 60px;
+	              }
+	              header .hesd_inner .right_part form input{
+		width: 250px;
+		height: 28px;
+	} 
+	header .hesd_inner .right_part form .recherche_bx{
+		width: 300px;
+		height: 30px;
+		
+	}
+	.display_n{
+		display: none;
+	}
+	.dispay_side{
+		display: flex;
+	}
+}
+@media(max-width:366px){
+	header .hesd_inner .right_part form input{
+		width: 200px;
+		height: 28px;
+	} 
+	header .hesd_inner .right_part form .recherche_bx{
+		width: 250px;
+		height: 30px;
+		
+	}
+	.display_n{
+		display: none;
+	}
+
+	.abst_bars{
+		position: absolute;
+		left: 3px;
+	         
+	}
+		
+	}
+	@media(max-width:444px){
+	
+		.abst_bars{
+			position: absolute;
+			left: -10px;
+		         
+		}
+			
+		}
+		@media(max-width:390px){
+	
+			.abst_bars{
+				position: absolute;
+				left: -20px;
+			         
+			}
+				
+			}
