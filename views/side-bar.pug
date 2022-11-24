@@ -4,7 +4,7 @@ block prepend styles
     link(rel="stylesheet", type='text/css' href="/static/css/sidebar.css")
 
 body 
-    .slide-bar 
+    .slide-bar#sidebar 
         .logo 
             a(href="#")
                 h1 RoofTop 
@@ -17,13 +17,16 @@ body
                         span    
                             img(src="/static/images/OIP (1).jfif" ,width="30px") 
                         span.nav-link Area =
-                        span.nav-link 20 sq m
+                        span.nav-link #{building.} sq m
                 li
                     a(href="#")
                         span 
                             img(src="/static/images/R (1).png" , width="30px")
                         span.nav-link Paint 
                     .se
+                        select
+                            for material in materialsList:
+                                option #{material.name}
                         select 
                             option Slaked Lime
                             option White Cement
