@@ -473,7 +473,7 @@ function initMap() {
     })
     
     const options = {
-        zoom: 25,
+        zoom: 15,
         center: { lat: -34.16644556429744, lng: 24.828156701270824 },
         mapTypeId: 'satellite',
         disableDefaultUI: true
